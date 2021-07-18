@@ -119,3 +119,32 @@ function sizeGenerator(sizesArray) {
 
 // uitvoeren van de main tvGenerator functie
 tvGenerator(inventory);
+
+//* BONUSOPDRACHT
+
+// functie die de lijst vervangt met een nieuwe lijst
+function priceHighLow() {
+  document.querySelector(".tv-overview").replaceChildren();
+  inventory.sort((a, b) => {
+    return b.price - a.price;
+  });
+  tvGenerator(inventory);
+}
+
+// bij het klikken op "prijs hoog naar laag" wordt de prijs gesorteerd van hoog naar laag
+const sortPrice = document.querySelector(".sort-tv li:nth-of-type(1)");
+sortPrice.addEventListener("click", priceHighLow);
+
+// bij het klikken op "Ambilight TV's" wordt de oude lijst vervangen voor ambilight tv's
+const sortAmbilight = document.querySelector(".sort-tv li:nth-of-type(2)");
+sortAmbilight.addEventListener("click", () => {
+  document.querySelector(".tv-overview").replaceChildren();
+  tvGenerator(ambilightTv);
+});
+
+// bij het klikken op "uitverkochte TV's" wordt de oude lijst vervangen voor uitverkochte tv's
+const sortSoldout = document.querySelector(".sort-tv li:nth-of-type(3)");
+sortSoldout.addEventListener("click", () => {
+  document.querySelector(".tv-overview").replaceChildren();
+  tvGenerator(soldOut);
+});
