@@ -1,0 +1,15 @@
+.total-tv {
+  color: red;
+}
+.total-goal {
+  color: blue;
+}
+
+.total-earnings {
+  color: green;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 1em;
+}
