@@ -100,7 +100,7 @@ function tvGenerator(tvs) {
     const tvThirdline = `${sizeGenerator(tv.availableSizes)} <br>`;
     const li = document.createElement("li");
     li.innerHTML = tvFirstline + tvSecondline + tvThirdline;
-    document.querySelector("ul").append(li);
+    document.querySelector(".tv-overview").append(li);
   }
 }
 
@@ -117,4 +117,5 @@ function sizeGenerator(sizesArray) {
   }
 }
 
+// uitvoeren van de main tvGenerator functie
 tvGenerator(inventory);

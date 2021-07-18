@@ -13,3 +13,16 @@ li {
   list-style: none;
   padding-bottom: 1em;
 }
+
+.sort-tv {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 31px;
+  align-content: center;
+  padding-right: 40px;
+}
+.sort-tv li {
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 0.5em;
+}
