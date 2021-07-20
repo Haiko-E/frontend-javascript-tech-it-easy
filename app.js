@@ -36,7 +36,7 @@ const ambilightTv = inventory.filter((element) => {
 
 // veranderd de sortering van prijs. laag naar hoog
 inventory.sort((a, b) => {
-  return a.price - b.price;
+  return b.price - a.price;
 });
 
 // * OPDRACHT 3a
@@ -129,7 +129,7 @@ tvGenerator(inventory);
 function priceHighLow() {
   document.querySelector(".tv-overview").replaceChildren();
   inventory.sort((a, b) => {
-    return b.price - a.price;
+    return a.price - b.price;
   });
   tvGenerator(inventory);
 }
@@ -151,5 +151,3 @@ sortSoldout.addEventListener("click", () => {
   document.querySelector(".tv-overview").replaceChildren();
   tvGenerator(soldOut);
 });
-
-const size = [22, 33, 44];

@@ -9,9 +9,10 @@
   color: green;
 }
 
-li {
+.tv-overview li {
   list-style: none;
   padding-bottom: 1em;
+  width: auto;
 }
 
 .sort-tv {
@@ -22,6 +23,7 @@ li {
   padding-right: 40px;
 }
 .sort-tv li {
+  list-style: none;
   padding: 0.5em;
   border: 2px solid black;
   border-radius: 0.5em;
