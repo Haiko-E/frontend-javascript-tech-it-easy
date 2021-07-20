@@ -111,10 +111,13 @@ function createPrice(price) {
 
 // Functie die over de tv size array loopt en een string returned waarin inches en cm worden aangegeven
 function sizeGenerator(sizesArray) {
-  for (const size of sizesArray) {
-    const sizeCm = Math.floor(size * 2.54);
-    return `${size} inch (${sizeCm} cm)`;
+  string = "";
+
+  for (const element of sizesArray) {
+    const sizeCm = element * 2.54;
+    string += `${element} inch (${Math.floor(sizeCm)}cm)  |  `;
   }
+  return string.slice(0, -3);
 }
 
 // uitvoeren van de main tvGenerator functie
@@ -148,3 +151,5 @@ sortSoldout.addEventListener("click", () => {
   document.querySelector(".tv-overview").replaceChildren();
   tvGenerator(soldOut);
 });
+
+const size = [22, 33, 44];
