@@ -1,0 +1,37 @@
+.total-tv {
+  color: red;
+}
+.total-goal {
+  color: blue;
+}
+
+.total-earnings {
+  color: green;
+}
+
+.tv-overview li {
+  list-style: none;
+  padding-bottom: 1em;
+  width: auto;
+}
+
+.sort-tv {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 31px;
+  align-content: center;
+  padding-right: 40px;
+}
+.sort-tv li {
+  list-style: none;
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+.sort-tv li:hover {
+  background-color: black;
+  color: white;
+}

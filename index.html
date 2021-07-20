@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Tech It Easy Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
+    <p>
+      Het aantal tv's dat nog verkocht moet worden
+      <span class="total-tv">aantal</span>
+    </p>
+    <p>
+      Onze doelopbrengst:
+      <span class="total-goal">aantal</span>
+    </p>
+    <p>
+      Dit is het totaal bedrag wat we tot nu toe hebben verdient
+      <span class="total-earnings">aantal</span>
+    </p>
 
-</body>
+    <p class="tv-types">Hierbij de twee tv types:</p>
+
+    <ul class="sort-tv">
+      <li>Prijs van hoog naar laag</li>
+      <li>Ambilight TV's</li>
+      <li>Uitverkochte TV's</li>
+    </ul>
+
+    <ul class="tv-overview"></ul>
+
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
